@@ -5,7 +5,10 @@ function getFiles() {
     var files = folder.getFiles();
     while (files.hasNext()) {
       var file = files.next();
-      addBonusQuestions(file);
+      if (!file.isStarred()) {
+        addBonusQuestions(file);
+        file.setStarred(starred);
+      }
    }
  }
 }
