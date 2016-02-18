@@ -9,7 +9,7 @@ function getFiles() {
         addBonusQuestions(file);
         addGameOneQuestions(file);
         addGameTwoQuestions(file);
-        file.setStarred(starred);
+        file.setStarred(true);
       }
    }
  }
